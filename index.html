@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/tomato.png" type="image/x-icon">
+
+    <title>Pomodoro focado</title>
+</head>
+
+<body onload="init_dom()">
+
+    <section>
+        <div id="title">
+            <h1>Tomate Focado</h1>
+        </div>
+    </section>
+    <section>
+        <div id="alert">
+        </div>
+    </section>
+    <section>
+        <div id="pomodoro">
+            <div class="container">
+                <img src="imagens/tomato.png" alt="tomate">
+                <div class="tomato">
+                    <div id="minute" class="time "></div>
+                    <span class="time">:</span>
+                    <div id="second" class="time "></div>
+                </div>
+                <div class="button">
+                    <button class="button_event start" onclick="start()">Play</button>
+                    <button class="button_event stop" onclick="stop()">Stop</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,800;1,900&display=swap');
+     :root {
+        --tomato: rgb(219, 82, 77);
+    }
+    
+    * {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 80vh;
+        width: 100%;
+        background-color: brown;
+        color: white;
+    }
+    
+    #title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+    }
+    
+    #title h1 {
+        font-size: 50px;
+        font-style: italic;
+        font-weight: 900;
+    }
+    
+    #alert {
+        background: rgb(80, 5, 5);
+        margin: auto;
+        border-radius: 15px;
+        text-align: center;
+        width: 50%;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: 900;
+        font-style: italic;
+        visibility: hidden;
+    }
+    
+    .container {
+        display: block;
+        height: 500px;
+        width: 500px;
+        margin: auto;
+    }
+    
+    .container img {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+    }
+    
+    .container .tomato {
+        padding: 100px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+    
+    .container .tomato .time {
+        font-size: 100px;
+        font-weight: 800;
+    }
+    
+    .container .button {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .container .button .button_event {
+        padding: 20px 70px;
+        border-radius: 10px;
+        border: none;
+        font-size: 30px;
+        font-weight: 900;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .container .button .button_event.start {
+        background-color: var(--tomato);
+    }
+    
+    .container .button .button_event.stop {
+        background-color: var(--tomato);
+    }
+    
+    .container .button .button_event.stop:hover {
+        background-color: rgba(153, 153, 153, 0.096);
+    }
+    
+    .container .button .button_event.start:hover {
+        background-color: rgba(219, 82, 77, 0.5);
+    }
